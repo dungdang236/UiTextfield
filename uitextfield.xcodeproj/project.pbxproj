@@ -15,6 +15,11 @@
 		3F41DE371C03C3B80089C8E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F41DE351C03C3B80089C8E4 /* LaunchScreen.storyboard */; };
 		3F41DE421C03C3B80089C8E4 /* uitextfieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F41DE411C03C3B80089C8E4 /* uitextfieldTests.m */; };
 		3F41DE4D1C03C3B80089C8E4 /* uitextfieldUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F41DE4C1C03C3B80089C8E4 /* uitextfieldUITests.m */; };
+		3F41DE5B1C03C7270089C8E4 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F41DE5A1C03C7270089C8E4 /* search.png */; settings = {ASSET_TAGS = (); }; };
+		3F41DE5D1C03CD980089C8E4 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F41DE5C1C03CD980089C8E4 /* cat.png */; settings = {ASSET_TAGS = (); }; };
+		3F41DE611C03CDFD0089C8E4 /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F41DE601C03CDFD0089C8E4 /* dog.png */; settings = {ASSET_TAGS = (); }; };
+		3F41DE631C03D65C0089C8E4 /* notfound.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F41DE621C03D65C0089C8E4 /* notfound.png */; settings = {ASSET_TAGS = (); }; };
+		3F41DE651C03DFBA0089C8E4 /* mouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F41DE641C03DFBA0089C8E4 /* mouse.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		3F41DE481C03C3B80089C8E4 /* uitextfieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uitextfieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F41DE4C1C03C3B80089C8E4 /* uitextfieldUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = uitextfieldUITests.m; sourceTree = "<group>"; };
 		3F41DE4E1C03C3B80089C8E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F41DE5A1C03C7270089C8E4 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = search.png; path = ../../../Downloads/search.png; sourceTree = "<group>"; };
+		3F41DE5C1C03CD980089C8E4 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cat.png; path = ../../../Downloads/cat.png; sourceTree = "<group>"; };
+		3F41DE601C03CDFD0089C8E4 /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dog.png; path = ../../../Downloads/dog.png; sourceTree = "<group>"; };
+		3F41DE621C03D65C0089C8E4 /* notfound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = notfound.png; path = ../../../Downloads/notfound.png; sourceTree = "<group>"; };
+		3F41DE641C03DFBA0089C8E4 /* mouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mouse.png; path = ../../../Downloads/mouse.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,11 @@
 		3F41DE261C03C3B80089C8E4 /* uitextfield */ = {
 			isa = PBXGroup;
 			children = (
+				3F41DE641C03DFBA0089C8E4 /* mouse.png */,
+				3F41DE621C03D65C0089C8E4 /* notfound.png */,
+				3F41DE601C03CDFD0089C8E4 /* dog.png */,
+				3F41DE5C1C03CD980089C8E4 /* cat.png */,
+				3F41DE5A1C03C7270089C8E4 /* search.png */,
 				3F41DE2A1C03C3B80089C8E4 /* AppDelegate.h */,
 				3F41DE2B1C03C3B80089C8E4 /* AppDelegate.m */,
 				3F41DE2D1C03C3B80089C8E4 /* ViewController.h */,
@@ -244,8 +259,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F41DE371C03C3B80089C8E4 /* LaunchScreen.storyboard in Resources */,
+				3F41DE631C03D65C0089C8E4 /* notfound.png in Resources */,
+				3F41DE5D1C03CD980089C8E4 /* cat.png in Resources */,
 				3F41DE341C03C3B80089C8E4 /* Assets.xcassets in Resources */,
 				3F41DE321C03C3B80089C8E4 /* Main.storyboard in Resources */,
+				3F41DE5B1C03C7270089C8E4 /* search.png in Resources */,
+				3F41DE651C03DFBA0089C8E4 /* mouse.png in Resources */,
+				3F41DE611C03CDFD0089C8E4 /* dog.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

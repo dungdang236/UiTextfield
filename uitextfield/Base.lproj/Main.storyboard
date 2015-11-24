@@ -1,25 +1,77 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Go ten con vat" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="X7h-q7-vZ0">
+                                <rect key="frame" x="68" y="50" width="225" height="30"/>
+                                <animations/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="tenconvat:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="9Gt-E1-oRA"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="notfound.png" translatesAutoresizingMaskIntoConstraints="NO" id="hpv-wu-ndG">
+                                <rect key="frame" x="68" y="235" width="212" height="212"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGw-mF-ilk">
+                                <rect key="frame" x="157" y="139" width="60" height="60"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="search.png"/>
+                                <connections>
+                                    <action selector="timkiem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qod-tx-bip"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="X7h-q7-vZ0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="5zg-TJ-5X2"/>
+                            <constraint firstItem="WGw-mF-ilk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="127" id="7D6-Kv-CBD"/>
+                            <constraint firstItem="hpv-wu-ndG" firstAttribute="top" secondItem="WGw-mF-ilk" secondAttribute="bottom" constant="82" id="BPf-aW-mrT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WGw-mF-ilk" secondAttribute="trailing" constant="128" id="CwI-z6-cn0"/>
+                            <constraint firstItem="WGw-mF-ilk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HIR-eC-Jqz"/>
+                            <constraint firstItem="X7h-q7-vZ0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HWC-fX-4rg"/>
+                            <constraint firstItem="WGw-mF-ilk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LST-Qx-2gh"/>
+                            <constraint firstItem="X7h-q7-vZ0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="74" id="dd3-Ym-cfd"/>
+                            <constraint firstItem="hpv-wu-ndG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hb2-sU-OSg"/>
+                            <constraint firstItem="WGw-mF-ilk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iSE-dT-dUC"/>
+                            <constraint firstItem="hpv-wu-ndG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mBm-xl-F06"/>
+                            <constraint firstItem="X7h-q7-vZ0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oSn-Lh-WIx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="X7h-q7-vZ0" secondAttribute="trailing" constant="74" id="oYf-Vj-NVj"/>
+                            <constraint firstItem="WGw-mF-ilk" firstAttribute="top" secondItem="X7h-q7-vZ0" secondAttribute="bottom" constant="108" id="xjn-Xw-d1R"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="hinhanh" destination="hpv-wu-ndG" id="IGI-d4-HpD"/>
+                        <outlet property="ten" destination="X7h-q7-vZ0" id="O3f-lf-4zF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="304.5" y="418.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="notfound.png" width="256" height="256"/>
+        <image name="search.png" width="128" height="128"/>
+    </resources>
 </document>
